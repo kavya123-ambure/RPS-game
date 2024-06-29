@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    margin-top: 100px;
+    font-size: 2.5rem;
+    color: cyan;
+    line-height: 5rem;
+
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1vw;
+    margin-bottom: 50px;
+    line-height: 5rem;
+}
+ 
+
+.straight{
+    transform: rotate(-55deg);
+}
+.rotate-right{
+    transform: rotate(185deg);
+}
+
+.rotate-left{
+    transform: rotate(130deg);
+
+}
+.choice{
+    height: 8.5vw;
+    width: 8.5vw;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center
+  
+}
+
+.choice:hover{
+    zoom: 1.1;
+background-color: yellow;
+cursor: pointer;
+}
+
+.choice img{
+    height: 8vw;
+    width: 8vw;
+    
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.game{
+    display: flex;
+    color: aqua;
+    
+    margin: 0px 369px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    font-size: 24px;
+}
+.game img{
+    width: 23vw;
+    height: 24vw;
+    border: solid 4px cyan;
+    border-radius:50%;
+    margin: 10px 0px;
+    mix-blend-mode: lighten;
+}
+
+
+
+
+p{
+    
+    font-size: 1.8rem;
+}
+
+#msg{
+    background-color: cyan;
+    color: black;
+    display: inline-flex;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+@media screen and (max-width: 1025px) {
+    h1 {
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+    .game{
+        margin-top: 2rem;
+    }
+    .game img {
+        width: 180px;
+        height: 180px;
+        font-size: 20px;
+    }
+    #msg {
+        margin-top: 20px;
+    }
+    .choices {
+        gap: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .choice img {
+        height: 80px;
+        width: 80px;
+    }
+    .choice{
+        height: 85px;
+        width: 85px;
+
+    }
+   
+    
+    
+    
+}
+@media screen and (max-width: 768px) {
+    
+    h1{
+        margin: 50px;
+        font-size: 3rem;
+        color: black;
+
+    }
+    
+   .game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Limit the max width to ensure it stays centered */
+    margin: 0 auto;
+    color: black;
+   
+   }
+   .game img {
+    height: auto;
+    width: 45vw;
+    border: none;
+    border: none;
+    }
+    p {
+        margin-top: -15px;}
+    .choices {
+        position: relative;
+        width: 100%;
+        margin-top: -280px;
+        
+        background: black;
+    }
+    .choice img {
+        height: 16vw;
+        width: 16vw;
+    }
+
+    .choice {
+        position: absolute;
+        width: 17vw;
+        height: 17vw;
+       
+    }
+    #msg {
+        margin-top: 273px;
+        margin-bottom: 60px;
+    }
+
+    .choice#rock {
+        animation: rotate-rock 25s linear infinite;
+    }
+
+    .choice#paper {
+        animation: rotate-paper 25s linear infinite;
+    }
+
+    .choice#scissors {
+        animation: rotate-scissors 25s linear infinite;
+    }
+
+    @keyframes rotate-rock {
+        0% {
+            transform: rotate(0deg) translateX(-100px) rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg) translateX(-100px) rotate(-360deg);
+        }
+    }
+
+    @keyframes rotate-paper {
+        0% {
+            transform: rotate(120deg) translateX(-100px) rotate(-120deg);
+        }
+        100% {
+            transform: rotate(480deg) translateX(-100px) rotate(-480deg);
+        }
+    }
+
+    @keyframes rotate-scissors {
+        0% {
+            transform: rotate(240deg) translateX(-100px) rotate(-240deg);
+        }
+        100% {
+            transform: rotate(600deg) translateX(-100px) rotate(-600deg);
+        }
+    }
+    
+}
+@media screen and (max-width: 426px) {
+    h1{
+        font-size: 2.3rem;
+    }
+    .choices{
+        margin-top: -250px;
+    }
+}
+
