@@ -234,7 +234,13 @@ p{
         font-size: 2.3rem;
     }
     .choices{
-        margin-top: -250px;
+        margin-top: -270px;
+        margin-bottom: 30px;
+    }
+    #msg {
+        /* margin-top: 293px;
+        margin-bottom: 60px; */
+        margin: 293px 50px 60px;
     }
 }
 
